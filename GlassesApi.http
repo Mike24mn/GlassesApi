@@ -1,0 +1,43 @@
+@GlassesApi_HostAddress = http://localhost:5131
+
+GET {{GlassesApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{GlassesApi_HostAddress}}/glasses/
+Accept: application/json
+
+###
+
+GET {{GlassesApi_HostAddress}}/glasses/1
+Accept: application/json
+
+###
+
+POST {{GlassesApi_HostAddress}}/glasses/
+Content-Type: application/json
+
+{
+    "name": "Maui Jims",
+    "color": "Red",
+    "shape": "Aviator"
+}
+
+###
+
+PUT {{GlassesApi_HostAddress}}/glasses/2
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "Cheap Sunglasses",
+    "color": "Blue",
+    "shape": "Aviator"
+}
+
+###
+
+DELETE {{GlassesApi_HostAddress}}/glasses/1
+
+###
